@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #212121;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 8px;
+}
+.heading {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.heading-p {
+  color: #fff;
+  font-size: 18px;
+}
+.clock-wrapper {
+  width: 80%;
+  height: 60%;
+  background-color: cornsilk;
+  border-radius: 1rem;
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day {
+  font-size: 24px;
+  font-weight: 600;
+  color: red;
+}
+.time {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 7rem;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.colons {
+  animation: blink 1s infinite;
+}
+.ampm{
+    font-size: 22px;
+    display: none;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+.format {
+  display: flex;
+  justify-content: space-between;
+}
+.greeting{
+    font-size: 2rem;
+    color: blue;
+    font-weight: 800;
+}
+.clock_format{
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}

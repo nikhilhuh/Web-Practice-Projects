@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div class="heading">
+          BMI full form in medical - <span>Body Mass Index</span>
+          <p>
+            BMI is a statistical index that is necessary to measure the amount
+            of body fat. A person’s weight and height are used to estimate their
+            obesity status, thereby understanding the risk of obesity-related
+            comorbidities.
+          </p>
+        </div>
+        <div class="formula">
+          BMI formula
+          <p>
+            As explained earlier, the weight and height of an individual is
+            necessary for the BMI calculation formula. Usually, the BMI formula
+            in kg and meter is calculated.
+            <br />
+            <span
+              >BMI = weight (in kg)/ height^2 (in m^2), the weight of a person
+              (in kilograms) divided by their height in meters squared.</span
+            >
+          </p>
+        </div>
+        <div class="image"></div>
+      </div>
+      <form>
+        <div class="header">BMI Calculator - age between 2 yrs to 120 yrs</div>
+        <div class="input-form">
+          <label for="height">Height (in cm) :</label>
+          <input
+            type="number"
+            name="height"
+            id="height"
+            placeholder="Your Height in cm"
+          />
+          <label for="weight">Weight (in Kg) :</label>
+          <input
+            type="number"
+            name="weight"
+            id="weight"
+            placeholder="Your Weight in Kg"
+          />
+          <button id="calculate">Calculate</button>
+        </div>
+        <div class="output">
+          <div class="result"></div>
+          <img src="./images/BMI INDEX.png" alt="" class="bmi-index" />
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(30, 29, 29);
+}
+.image img{
+    width: 100%; 
+    height: auto; 
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    margin-top: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+svg{
+    height: 4rem;
+}
+.heading-p{
+    font-size: 20px;
+    color: gray;
+    max-width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-area {
+    margin-top: 2rem;
+    max-width: 70%;
+    border: 2px solid black; 
+    padding: 12px 12px;
+}
+.quote{
+    color: white;
+    font-size: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.source::before{
+    content: "-";
+}
+.source{
+    color: gray;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 10px;
+    gap: 12px;
+}
+.citation::before{
+    content: ",";
+    margin-right: 5px;
+}
+.year::before{
+    content: ",";
+    margin-right: 5px;
+}
+.new-quote{
+    margin-top: 10px;
+    padding: 10px 8px;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        padding: 1rem;
+    }
+    .heading {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+    .heading-p {
+        font-size: 16px; /* Adjust text size */
+        max-width: 90%; /* Allow more width for smaller screens */
+    }
+    .quote-area {
+        max-width: 90%; /* Adjust width for smaller screens */
+    }
+    .quote {
+        font-size: 24px; /* Smaller font size */
+    }
+    .source {
+        font-size: 14px; /* Smaller font size */
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .main-container {
+        padding: 2rem;
+    }
+    .heading {
+        font-size: 3rem; /* Adjust font size for medium screens */
+    }
+    .heading-p {
+        font-size: 18px; /* Adjust text size */
+        max-width: 80%; /* Adjust width */
+    }
+    .quote-area {
+        max-width: 80%; /* Adjust width */
+    }
+    .quote {
+        font-size: 28px; /* Adjust font size */
+    }
+    .source {
+        font-size: 18px; /* Adjust font size */
+    }
+}
