@@ -3,83 +3,188 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #212121;
+  font-family: 'Arial', sans-serif;
 }
+
 .container {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 10px 8px;
+  justify-content: center;
+  padding: 20px;
 }
+
 .heading {
   color: white;
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
 }
+
 .heading-p {
-  color: #fff;
-  font-size: 18px;
+  color: #ccc;
+  font-size: 1.2rem;
 }
+
 .clock-wrapper {
-  width: 80%;
-  height: 60%;
-  background-color: cornsilk;
-  border-radius: 1rem;
-  padding: 14px 12px;
+  width: 90%;
+  max-width: 600px;
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+  border-radius: 1.5rem;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .day {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 600;
-  color: red;
+  color: #ff5722;
+  margin-bottom: 10px;
 }
+
 .time {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
-  font-size: 7rem;
+  align-items: baseline ;
+  font-size: 6rem;
+  color: #333;
 }
+
 @keyframes blink {
-  0%,
-  100% {
+  0%, 100% {
     opacity: 1;
   }
-  25%,
-  75% {
+  25%, 75% {
     opacity: 0.5;
   }
   50% {
     opacity: 0;
   }
 }
+
 .colons {
   animation: blink 1s infinite;
 }
-.ampm{
-    font-size: 22px;
-    display: none;
-    flex-direction: column;
-    justify-content: end;
-    
+
+.ampm {
+  font-size: 1.5rem;
+  color: #888;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 }
+
 .format {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  margin-top: 20px;
 }
-.greeting{
-    font-size: 2rem;
-    color: blue;
-    font-weight: 800;
+
+.greeting {
+  font-size: 2rem;
+  color: #2196f3;
+  font-weight: 700;
+  margin-top: 20px;
 }
-.clock_format{
-  padding: 10px;
+
+.clock_format {
+  padding: 10px 20px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.clock_format:hover {
+  background-color: #1976d2;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .heading-p {
+    font-size: 1rem;
+  }
+
+  .clock-wrapper {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .day {
+    font-size: 1.5rem;
+  }
+
+  .time {
+    font-size: 4.5rem;
+  }
+
+  .ampm {
+    font-size: 1.25rem;
+  }
+
+  .greeting {
+    font-size: 1.5rem;
+  }
+
+  .clock_format {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .heading-p {
+    font-size: 0.9rem;
+  }
+
+  .clock-wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .day {
+    font-size: 1.25rem;
+  }
+
+  .time {
+    font-size: 3.5rem;
+  }
+
+  .ampm {
+    font-size: 1rem;
+  }
+
+  .greeting {
+    font-size: 1.25rem;
+  }
+
+  .clock_format {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
 }

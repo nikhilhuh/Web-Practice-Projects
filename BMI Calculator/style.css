@@ -127,6 +127,94 @@ button:hover{
   text-align: center;
   color: white;
 }
-.bmi-index{
+.bmi-pointer{
   position: relative;
+}
+.pointer {
+  position: absolute;
+  bottom: 3%;
+  right: 50%;
+  width: 5px;
+  height: 160px;
+  background: white;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+}
+.pointer::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 95%;  
+  transform: translateX(-50%);  
+  border: 10px solid white;
+  border-radius: 50%;
+}
+.pointer::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-bottom-color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .pointer{
+    height: 120px;
+    right: 54%;
+  }
+  
+  .main-container{
+    flex-direction: column;
+  }
+  .heading,
+  .formula,
+  .header,
+  .input-form,
+  button {
+    font-size: 1.2rem; /* Adjust font size for medium screens */
+  }
+
+  .input-form,
+  .container,
+  form {
+    width: 90%; /* Adjust width for medium screens */
+    height: auto;
+  }
+  .header{
+    margin-top: 1rem;
+  }
+  .image{
+    display: none;
+  }
+
+  .result{
+    font-size: 1.2rem;
+    max-width: 85%;
+  }
+  .bmi-index{
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pointer{
+    height: 60px;
+  }
+  .heading,
+  .formula,
+  .header,
+  .input-form,
+  button {
+    font-size: 1rem; /* Adjust font size for small screens */
+  }
+
+  .input-form,
+  .container,
+  form {
+    width: 100%; /* Full width for small screens */
+  }
+
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown + Stopwatch</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="countdown">
+                <div class="heading">Countdown Timer</div>
+                <p>Uses 24-hour format</p>
+                <div class="timer">
+                    <div class="days"></div>
+                    <span class="label">Days</span>
+                    <div class="hours"></div>
+                    <span class="label">Hours</span>
+                    <div class="minutes"></div>
+                    <span class="label">Minutes</span>
+                    <div class="seconds"></div>
+                    <span class="label">Seconds</span>
+                </div>
+                <div class="select-date">
+                    <div>
+                        <label for="date">Select Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div>
+                        <label for="time">Select Time</label>
+                        <input type="time" id="time">
+                    </div>
+                </div>
+                <div class="submit">
+                    <button class="submit-button">Start Countdown</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -4,8 +4,8 @@ let randomNumber = parseInt(Math.random()*100+1)
 const submit = document.getElementById("subt")
 const userInput = document.getElementById("guessField")
 const guessSlot = document.querySelector(".guesses")
-const  remaining = document.querySelector(".lastResult")
-const  lowOrHi = document.querySelector(".lowOrHi")
+const remaining = document.querySelector(".lastResult")
+const lowOrHi = document.querySelector(".lowOrHi")
 const startOver = document.querySelector(".resultParas")
 
 const p = document.createElement("p")
@@ -33,7 +33,7 @@ function validateGuess(guess){
     }
     else{
         prevGuesses.unshift(guess)
-        console.log(prevGuesses)
+        // console.log(prevGuesses)
         if(numGuesses === 10){
             displayGuess(guess)
             displayMessage(`Game over , random number was ${randomNumber}`)
