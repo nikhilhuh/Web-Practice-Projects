@@ -5,19 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Background Color Switcher</title>
+    <title>Background Changer</title>
   </head>
   <body>
     <div class="canvas">
-      <h1>Color Scheme Switcher</h1>
-      <span class="button" id="grey"></span>
-      <span class="button" id="white"></span>
-      <span class="button" id="blue"></span>
-      <span class="button" id="yellow"></span>
-      <h2>
-        Try clicking on one of the colors above
-        <span>to change the background color of this page!</span>
-      </h2>
+      <div class="heading">
+        <h1>Background Changer</h1>
+        <p>
+          Try clicking on one of the colors above
+          <span>to change the background color of this page!</span>
+          <span>and see the quivalent Hex Value of the color</span>
+        </p>
+      </div>
+      <div class="hexValue">
+        <label for="hexValue">Equivalent Hex Value</label>
+        <input type="text" name="hexValue" id="hexValue" readonly>
+      </div>
+      <div class="color-pallete">
+        <span class="button" id="grey"></span>
+        <span class="button" id="white"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="yellow"></span>
+        <span class="button" id="green"></span>
+        <span class="button" id="red"></span>
+        <span class="button" id="papayawhip"></span>
+        <span class="button" id="navy"></span>
+        <span class="button" id="lightblue"></span>
+        <span class="button" id="cyan"></span>
+        <span class="button" id="darkgoldenrod"></span>
+        <span class="button" id="black"></span>
+        <span class="button" id="greenyellow"></span>
+        <span class="button" id="hotpink"></span>
+        <span class="button" id="indigo"></span>
+        <span class="button" id="burlywood"></span>
+      </div>
+
     </div>
     <script src="script.js"></script>
   </body>

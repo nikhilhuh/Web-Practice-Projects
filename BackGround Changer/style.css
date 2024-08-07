@@ -1,36 +1,100 @@
-html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: white;
+  --color: black;
+}
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+.canvas {
+  height: 100%;
+  width: 100%;
+  padding: 12px 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color);
+}
+.heading {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  place-items: center center;
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 70%;
+}
+.hexValue{
+  width: 90%;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.hexValue label{
+  display: inline-block;
+  font-weight: 600;
+}
+.hexValue input{
+  height: 40px;
+  width: 150px;
+  outline: none;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 20px;
+  font-size: 1rem;
+  padding-left: 20px;
+}
+.color-pallete {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+.button {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--color);
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 1.5rem;
   }
-  
-  span {
-    display: block;
+  p {
+    font-size: 1rem;
   }
-  .canvas {
-    margin: 100px auto 100px;
+  .color-pallete {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
     width: 90%;
-    text-align: center;
   }
-  
   .button {
-    width: 100px;
-    height: 100px;
-    border: solid black 2px;
-    display: inline-block;
+    height: 80px;
+    width: 80px;
   }
-  
-  #grey {
-    background: grey;
-  }
-  
-  #white {
-    background: white;
-  }
-  #blue {
-    background: blue;
-  }
-  #yellow {
-    background: yellow;
-  }
-  
+}
