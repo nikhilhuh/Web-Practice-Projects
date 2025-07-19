@@ -20,7 +20,7 @@ body{
     width: 100px;
 }
 .logo{
-    background-image: url(./amazon_logo.png);
+    background-image: url('./images/amazon_logo.png');
     height: 50px;
     width: 100%;
     background-size: cover;
@@ -94,7 +94,7 @@ body{
     align-items: center;
 }
 .flag{
-    background-image: url(./language-flag.png);
+    background-image: url('./images/language-flag.png');
     height: 16px;
     width: 21px;
     background-size: cover;
@@ -141,10 +141,11 @@ span{
 /* PANEL */
 .panel{
     color: white;
+    width: 100%;
     height: 40px;
     background-color: #222f3d;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .panel-ops p{
@@ -156,13 +157,12 @@ span{
     width: 60px;
 }
 .panel-ops{
-    width: 100%;
     font-size: 0.95rem;
 }
 
 /* HERO SECTION */
 .hero-section{
-    background-image: url(./hero_image.jpg);
+    background-image: url('./images/hero_image.jpg');
     height: 400px;
     background-size: cover;
     display: flex;
@@ -314,7 +314,7 @@ span{
 }
 
 .foot-logo{
-    background-image: url(./amazon_logo.png);
+    background-image: url('./images/amazon_logo.png');
     height: 50px;
     width: 100%;
     background-size: cover;

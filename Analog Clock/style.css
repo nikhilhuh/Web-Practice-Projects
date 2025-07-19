@@ -11,6 +11,7 @@ body{
     align-items: center;
     height: 100vh;
     background: radial-gradient(circle,rgb(20, 2, 4),rgb(6, 27, 18));
+    overflow: hidden;
 }
 .clock {
     height: 700px;
