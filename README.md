@@ -60,7 +60,7 @@ Convert typed text into spoken audio using the SpeechSynthesis API.
 
 **Tech Used**: HTML, CSS, JavaScript (SpeechSynthesis API)  
 **Preview**:  
-![Text to Speech](Previews/textToSpeechPreview1.png)  
+![Text to Speech](Previews/texttoSpeechPreview1.png)  
 
 ---
 
@@ -142,27 +142,6 @@ cd Web-Practice-Projects
 
 3. Open the folder in your code editor (e.g., VS Code) and use an extension like Live Server to view the HTML files in the browser.
 Alternatively, you can manually open each .html file in a web browser to test the project.
-
----
-
-## 📂 Folder Structure
-
-Web-Practice-Projects/
-│
-├── amazonClone/
-├── AnalogClock/
-├── DigitalClock/
-├── ToDoList/
-├── SpeechToText/
-├── TextToSpeech/
-├── BackgroundChanger/
-├── BMICalculator/
-├── CountdownTimer/
-├── FormValidation/
-├── NumberGuessingGame/
-├── RandomQuotesGenerator/
-├── Previews/
-└── README.md
 
 ---
 
