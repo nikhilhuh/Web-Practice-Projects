@@ -128,6 +128,18 @@ Generates random motivational or funny quotes from a preset array.
 
 ---
 
+### 13. 📜 University Site Clone
+Home page clone of a university site (CSJMU), with image curousels and other effects and events.
+
+**Tech Used**: HTML, CSS, JavaScript  
+**Preview**:  
+![University Site](Previews/Univ-1.png)  
+![University Site](Previews/Univ-2.png)  
+![University Site](Previews/Univ-3.png)  
+![University Site](Previews/Univ-4.png)  
+
+---
+
 ## 🛠️ How to Run Locally
 
 1. Clone the repository:

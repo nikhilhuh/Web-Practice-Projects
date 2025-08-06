@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSJMU</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div
+      class="h-12 bg-red-800 mb-2 flex justify-between items-center px-4 py-2"
+    >
+      <select name="language" id="language" class="cursor-pointer">
+        <option>Language</option>
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+      </select>
+
+      <h2 class="text-white font-bold">Screen Reader Access</h2>
+
+      <div>
+        <button
+          title="Decrease font size"
+          id="decreaseFontSize"
+          class="md:px-2 md:py-1 p-1 bg-white border-2 border-black hover:scale-105 cursor-pointer font-bold"
+        >
+          A-
+        </button>
+        <button
+          title="Default font size"
+          id="defaultFontSize"
+          class="md:px-2 md:py-1 p-1 bg-white border-2 border-black hover:scale-105 cursor-pointer font-bold"
+        >
+          A
+        </button>
+        <button
+          title="Increase font size"
+          id="increaseFontSize"
+          class="md:px-2 md:py-1 p-1 bg-white border-2 border-black hover:scale-105 cursor-pointer font-bold"
+        >
+          A+
+        </button>
+      </div>
+    </div>
+    <header class="mb-4 flex justify-center">
+      <img src="./images/logo.png" alt="" />
+    </header>
+
+    <nav
+      class="bg-blue-950 h-10 text-white flex justify-center items-center gap-1 mb-2 uppercase"
+    >
+      <p>Home</p>
+      <p>University</p>
+      <p>Governance</p>
+      <p>Academics</p>
+      <p>@Students</p>
+      <p>Iqac</p>
+      <p>International cell</p>
+      <p>Affiliation</p>
+      <p>Research</p>
+      <p>Alumni</p>
+      <p>Media</p>
+      <p>Login</p>
+    </nav>
+
+    <div class="grid grid-cols-4 gap-2 p-1 w-full h-[550px]">
+      <div class="col-span-1 flex flex-col gap-1 overflow-y-auto links">
+        <h2 class="flex gap-1 items-center sticky top-0 z-10 bg-white p-2">
+          Useful
+          <p class="text-red-600 font-semibold">Links</p>
+        </h2>
+        <div class="text-red-600 bg-gray-300 p-2">
+          <p class="blink">CSJMU Admissions 2025-2026 Open</p>
+        </div>
+        <div class="bg-gray-300 p-2">
+          <p class="blink">
+            Center for distance and online education (cdoe) admissions open
+          </p>
+        </div>
+        <div class="bg-gray-300 p-2">Innovative foundation</div>
+        <div class="bg-gray-300 p-2">Sports council</div>
+        <div class="bg-gray-300 p-2">Back Papers</div>
+        <div class="bg-gray-300 p-2">Sustainability</div>
+        <div class="bg-gray-300 p-2">Digital Evaluation</div>
+        <div class="bg-gray-300 p-2">AISHE survey 2023-34</div>
+        <div class="bg-gray-300 p-2">Office Circulars</div>
+        <div class="bg-gray-300 p-2">Photo Galleries</div>
+        <div class="bg-gray-300 p-2">Recruitments</div>
+        <div class="bg-gray-300 p-2">Results</div>
+      </div>
+
+      <div
+        class="col-span-2 flex items-center justify-center relative h-[550px]"
+      >
+        <button
+          id="carousel-prev"
+          class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded hover:bg-gray-400"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+            height="32"
+            width="32"
+          >
+            <path
+              d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            />
+          </svg>
+        </button>
+
+        <img
+          id="carousel-img"
+          src="./images/first.jpeg"
+          alt="carousel"
+          class="h-full w-full max-h-[550px]"
+        />
+
+        <button
+          id="carousel-next"
+          class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded hover:bg-gray-400"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+            height="32"
+            width="32"
+          >
+            <path
+              d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="col-span-1 flex flex-col gap-1 overflow-y-auto links">
+        <h2 class="flex gap-1 items-center sticky top-0 z-10 bg-white p-2">
+          <p class="text-red-600 font-semibold">Latest</p>
+          Notices
+          <p class="p-1 bg-red-600 text-white font-semibold">All Notices</p>
+        </h2>
+        <div class="bg-gray-300 p-2">
+          List of Exam Centers of Agriculture Even Semester Exam, 2024-25 for
+          District Hardoi, Raibareily, Sitapur and Lakhimpur Khiri
+        </div>
+        <div class="bg-gray-300 p-2">
+          Regarding 2024-25 Bsc II & IV AI For Science (Vocational Course)
+          Revised Scheme
+        </div>
+        <div class="bg-gray-300 p-2">
+          Regarding 2024-25 LLb II, IV, VI And BALlb II, IV, VI, VIII, X
+          Semester Scheme
+        </div>
+        <div class="bg-gray-300 p-2 font-bold">
+          Regarding correction window for the submitted admission forms on
+          Samarth Portal
+        </div>
+        <div class="bg-gray-300 p-2">
+          Regarding 2024-25 BED, MED, BPED AND MPED SECOND & Fourth Sem. Exam.
+          Schedule
+        </div>
+        <div class="bg-gray-300 p-2">
+          Regarding 2024-25 B.Sc. (Ag.) Second, Fourth & Six Sem. and M.Sc.
+          (Ag.) Second Sem. Exam. Schedule
+        </div>
+        <div class="bg-gray-300 p-2">
+          Cut off date for first counseling of UG/PG courses of School of Health
+          Sciences
+        </div>
+        <div class="bg-gray-300 p-2 font-bold">
+          Admission Notification 2025-26
+        </div>
+      </div>
+    </div>
+
+    <div class="h-[1.5px] bg-black mt-4 mb-4"></div>
+
+    <div
+      class="flex justify-center items-center border-2 border-red-500 w-[90vw] mx-auto overflow-hidden"
+    >
+      <div
+        class="bg-red-500 text-white px-6 py-2 font-bold flex items-center whitespace-nowrap"
+      >
+        Important Notices
+      </div>
+      <marquee
+        onmouseover="this.stop()"
+        onmouseout="this.start()"
+        class="flex items-center px-2 py-2 cursor-pointer"
+        behavior="scroll"
+        direction="left"
+      >
+        <span class="mx-2 text-red-600"
+          >Practical duty verification by examiner session 2024-25</span
+        >||
+        <span class="mx-2 text-red-600"
+          >Practical duty verification by examiner session 2024-25</span
+        >||
+        <span class="mx-2 text-red-600"
+          >Practical duty verification by examiner session 2024-25</span
+        >||
+      </marquee>
+    </div>
+
+    <div class="mt-6 grid grid-cols-4 gap-2 p-2">
+      <div class="col-span-1 bg-yellow-100 px-2 py-4">
+        <h2 class="font-bold text-center text-red-600">
+          About CSJM University
+        </h2>
+        <p class="mt-1 p-2">
+          Located in one of the biggest industrial metropolis of state of Uttar
+          Pradesh, Chhatrapati Shahu Ji Maharaj University stands as a hallmark
+          of higher education. It is an educational community where students of
+          various religions and cultural backgrounds study and work together in
+          a congenial atmosphere. The university is geared to provide maximum
+          scholastic benefit to each individual student. Chhatrapati Shahu Ji
+          Maharaj University, Kanpur has been on the map of higher education for
+          more than five decades. Established in 1966, it has not looked back...
+        </p>
+      </div>
+
+      <div class="col-span-2 bg-yellow-100 px-2 py-4">
+        <h2 class="font-bold text-center text-red-600">Authorities</h2>
+        <div class="mt-1 p-2 grid grid-cols-3 gap-2 text-center">
+          <div>
+            <img src="./images/governor.jpeg" alt="Governor" />
+            <p class="font-bold mt-[3px]">Smt. Anandiben Patel</p>
+            <p>Hon'ble Chancellor & Governor</p>
+            <p>Uttar Pradesh</p>
+          </div>
+          <div>
+            <img src="./images/chief-minister.jpeg" alt="Chief Minister" />
+            <p class="font-bold mt-[3px]">Shri Yogi Adityanath</p>
+            <p>Hon'ble Chief Minister</p>
+            <p>Uttar Pradesh</p>
+          </div>
+          <div>
+            <img src="./images/vc-sir-csjmu.jpg" alt="VC Sir" />
+            <p class="font-bold mt-[3px]">Prof. Vinay Kumar Pathakl</p>
+            <p>Vice Chancellor</p>
+            <p>CSJMU Kanpur</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-1 bg-yellow-100 px-2 py-4">
+        <h2 class="font-bold text-center text-red-600">Department Events</h2>
+        <div class="flex items-center justify-center relative h-[300px]">
+          <button
+            id="events-prev"
+            class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded hover:bg-gray-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              height="32"
+              width="32"
+            >
+              <path
+                d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+              />
+            </svg>
+          </button>
+
+          <img
+            id="events-img"
+            src="./images/events-1.jpeg"
+            alt="carousel"
+            class="h-full w-full mt-2 p-2"
+          />
+
+          <button
+            id="events-next"
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded hover:bg-gray-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              height="32"
+              width="32"
+            >
+              <path
+                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+              />
+            </svg>
+          </button>
+        </div>
+        <p class="mt-1 p-2 text-center" id="events-p">
+          Inter Departmental Cricket Match
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-6 p-2">
+      <h2 class="text-red-600 font-semibold text-center mb-4">
+        Important Websites
+      </h2>
+      <div class="marquee-container">
+        <div class="marquee">
+          <img src="./images/websites-1.jpeg" alt="" />
+          <img src="./images/websites-2.jpeg" alt="" />
+          <img src="./images/websites-3.jpeg" alt="" />
+          <img src="./images/websites-4.jpeg" alt="" />
+          <img src="./images/websites-5.jpeg" alt="" />
+          <img src="./images/websites-6.jpeg" alt="" />
+          <img src="./images/websites-7.jpeg" alt="" />
+          <img src="./images/websites-8.jpeg" alt="" />
+
+          <img src="./images/websites-1.jpeg" alt="" />
+          <img src="./images/websites-2.jpeg" alt="" />
+          <img src="./images/websites-3.jpeg" alt="" />
+          <img src="./images/websites-4.jpeg" alt="" />
+          <img src="./images/websites-5.jpeg" alt="" />
+          <img src="./images/websites-6.jpeg" alt="" />
+          <img src="./images/websites-7.jpeg" alt="" />
+          <img src="./images/websites-8.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6 bg-gray-200 p-2">
+      <h2 class="text-red-600 font-bold text-center mb-4">
+        University News/Circulars
+      </h2>
+      <div class="grid grid-cols-4 gap-4 font-bold">
+        <div
+          class="hover:bg-red-600 hover:text-white cursor-pointer p-2 flex flex-col gap-4 items-center justify-center text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+            height="32"
+            width="32"
+          >
+            <path
+              d="M96 96l0 160c0 53 43 96 96 96s96-43 96-96l-80 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l80 0 0-32-80 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l80 0 0-32-80 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l80 0c0-53-43-96-96-96S96 43 96 96zM320 240l0 16c0 70.7-57.3 128-128 128s-128-57.3-128-128l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 89.1 66.2 162.7 152 174.4l0 33.6-48 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l72 0 72 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0 0-33.6c85.8-11.7 152-85.3 152-174.4l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 24z"
+            />
+          </svg>
+          <p>Media Coverage</p>
+        </div>
+        <div
+          class="hover:bg-red-600 hover:text-white cursor-pointer p-2 flex flex-col gap-4 items-center justify-center text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            height="32"
+            width="32"
+          >
+            <path
+              d="M96 96c0-35.3 28.7-64 64-64l288 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L80 480c-44.2 0-80-35.8-80-80L0 128c0-17.7 14.3-32 32-32s32 14.3 32 32l0 272c0 8.8 7.2 16 16 16s16-7.2 16-16L96 96zm64 24l0 80c0 13.3 10.7 24 24 24l112 0c13.3 0 24-10.7 24-24l0-80c0-13.3-10.7-24-24-24L184 96c-13.3 0-24 10.7-24 24zm208-8c0 8.8 7.2 16 16 16l48 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-48 0c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16l48 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-48 0c-8.8 0-16 7.2-16 16zM160 304c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-256 0c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-256 0c-8.8 0-16 7.2-16 16z"
+            />
+          </svg>
+          <p>Press Release</p>
+        </div>
+        <div
+          class="hover:bg-red-600 hover:text-white cursor-pointer p-2 flex flex-col gap-4 items-center justify-center text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            height="32"
+            width="32"
+          >
+            <path
+              d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+            />
+          </svg>
+          <p>Office Circulars</p>
+        </div>
+        <div
+          class="hover:bg-red-600 hover:text-white cursor-pointer p-2 flex flex-col gap-4 items-center justify-center text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            :
+            viewBox="0 0 576 512"
+            flex-col
+            gap-4
+            height="32"
+            width="32"
+          >
+            <path
+              d="M0 128C0 92.7 28.7 64 64 64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2l0 256c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1l0-17.1 0-128 0-17.1 14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"
+            />
+          </svg>
+          <p>Video Gallery</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6 grid grid-cols-2 gap-2 p-2">
+      <div class="col-span-1 bg-yellow-100 px-2 py-4">
+        <h2 class="font-bold text-center text-red-600">Research Papers</h2>
+        <div class="mt-1 p-2 max-h-[400px] overflow-y-auto">
+          <div class="flex gap-2 items-center p-2">
+            <img
+              src="./images/dr-deepesh.jpg"
+              alt=""
+              class="h-[100px] w-auto"
+            />
+            <p>
+              Dr. Dipesh Kumar Verma, Department of Biotechnology, published
+              article on “Exploring the application of herbal photosensitizers
+              in antimicrobial photodynamic therapy against Mycobacterium
+              Tuberculosis” Journal of 3 Biotech.
+            </p>
+          </div>
+          <hr />
+          <div class="flex gap-2 items-center mt-2 p-2">
+            <img
+              src="./images/dr-anuradha-kalani.jpg"
+              alt=""
+              class="h-[100px] w-auto"
+            />
+            <p>
+              Dr. Anuradha Kalani, Department of Biotechnology, published
+              article on “Interconnections of screen time with
+              neuroinflammation” Journal of Molecular Cellular Biochemistry.
+            </p>
+          </div>
+          <hr />
+          <div class="flex gap-2 items-center mt-2 p-2">
+            <img
+              src="./images/Adarsh_web.jpg"
+              alt=""
+              class="h-[100px] w-auto"
+            />
+            <p>
+              Dr. Adarsh Kumar Srivastav, Department of Health Science,
+              published a Commentary on: Developing hypotheses for scientific
+              research in musculoskeletal conditions: A guide for health-care
+              professional, Journal of Musculoskeletal Surgery and Research.
+            </p>
+          </div>
+          <hr />
+          <div class="flex gap-2 items-center mt-2 p-2">
+            <img
+              src="./images/dr-pramod-yadav.jpeg"
+              alt=""
+              class="h-[100px] w-auto"
+            />
+            <p>
+              Dr. Pramood K. Yadav, Department of Life Science, published
+              article on “Immobilization of engineered cytochrome P450cam
+              (CYP101) to gold electrode via maleimide linker for
+              electrocatalysis” Journal of Discover Chemistry.
+            </p>
+          </div>
+          <hr />
+          <div class="flex gap-2 items-center mt-2 p-2">
+            <img
+              src="./images/dr-rajeev-mishra.png"
+              alt=""
+              class="h-[100px] w-auto"
+            />
+            <p>
+              Dr. Rajeev Mishra, Department of Life Science, published article
+              on “Attenuation of chromium (VI) and arsenic (III)-induced
+              oxidative stress and hepatic apoptosis by phloretin, biochanin-A,
+              and coenzyme Q10 via activation of SIRT1/Nrf2/HO-1/NQO1 signaling”
+              Journal of Biochemical and Molecular Toxicology.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-1 bg-yellow-100 px-2 py-4">
+        <h2 class="font-bold text-center text-red-600">University Events</h2>
+        <div class="flex items-center justify-center relative h-[300px]">
+          <button
+            id="uniEvents-prev"
+            class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded hover:bg-gray-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              height="32"
+              width="32"
+            >
+              <path
+                d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+              />
+            </svg>
+          </button>
+
+          <img
+            id="uniEvents-img"
+            src="./images/events-4.jpg"
+            alt="carousel"
+            class="h-full w-full mt-2 p-2"
+          />
+
+          <button
+            id="uniEvents-next"
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded hover:bg-gray-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              height="32"
+              width="32"
+            >
+              <path
+                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+              />
+            </svg>
+          </button>
+        </div>
+        <p class="mt-1 p-2 text-center" id="uniEvents-p">
+          An international invited lecture on the occassion of the 38th convocation week
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-6 bg-gray-200 p-2">
+      <h2 class="text-red-600 font-bold text-center mb-4">Features</h2>
+      <div class="grid grid-cols-4 gap-4 font-bold">
+        <div
+          class="hover:bg-red-600 hover:text-white cursor-pointer p-2 flex flex-col gap-4 items-center justify-center text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            height="32"
+            width="32"
+          >
+            <path
+              d="M156.6 384.9L125.7 354c-8.5-8.5-11.5-20.8-7.7-32.2c3-8.9 7-20.5 11.8-33.8L24 288c-8.6 0-16.6-4.6-20.9-12.1s-4.2-16.7 .2-24.1l52.5-88.5c13-21.9 36.5-35.3 61.9-35.3l82.3 0c2.4-4 4.8-7.7 7.2-11.3C289.1-4.1 411.1-8.1 483.9 5.3c11.6 2.1 20.6 11.2 22.8 22.8c13.4 72.9 9.3 194.8-111.4 276.7c-3.5 2.4-7.3 4.8-11.3 7.2l0 82.3c0 25.4-13.4 49-35.3 61.9l-88.5 52.5c-7.4 4.4-16.6 4.5-24.1 .2s-12.1-12.2-12.1-20.9l0-107.2c-14.1 4.9-26.4 8.9-35.7 11.9c-11.2 3.6-23.4 .5-31.8-7.8zM384 168a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"
+            />
+          </svg>
+          <p>Innovation</p>
+        </div>
+        <div
+          class="hover:bg-red-600 hover:text-white cursor-pointer p-2 flex flex-col gap-4 items-center justify-center text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            height="32"
+            width="32"
+          >
+            <path
+              d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160l0 8c0 13.3 10.7 24 24 24l400 0c13.3 0 24-10.7 24-24l0-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224l-64 0 0 196.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512l448 0c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1L448 224l-64 0 0 192-40 0 0-192-64 0 0 192-48 0 0-192-64 0 0 192-40 0 0-192zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+            />
+          </svg>
+          <p>Gyansanchay</p>
+        </div>
+        <div
+          class="hover:bg-red-600 hover:text-white cursor-pointer p-2 flex flex-col gap-4 items-center justify-center text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"
+            height="32"
+            width="32"
+          >
+            <path
+              d="M80 104c0-22.1-17.9-40-40-40S0 81.9 0 104l0 56 0 64L0 325.5c0 25.5 10.1 49.9 28.1 67.9L128 493.3c12 12 28.3 18.7 45.3 18.7l66.7 0c26.5 0 48-21.5 48-48l0-78.9c0-29.7-11.8-58.2-32.8-79.2l-25.3-25.3c0 0 0 0 0 0l-15.2-15.2-32-32c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l32 32 15.2 15.2c11 11 9.2 29.2-3.7 37.8c-9.7 6.5-22.7 5.2-31-3.1L98.7 309.5c-12-12-18.7-28.3-18.7-45.3L80 224l0-80 0-40zm480 0l0 40 0 80 0 40.2c0 17-6.7 33.3-18.7 45.3l-51.1 51.1c-8.3 8.3-21.3 9.6-31 3.1c-12.9-8.6-14.7-26.9-3.7-37.8l15.2-15.2 32-32c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-32 32-15.2 15.2c0 0 0 0 0 0l-25.3 25.3c-21 21-32.8 49.5-32.8 79.2l0 78.9c0 26.5 21.5 48 48 48l66.7 0c17 0 33.3-6.7 45.3-18.7l99.9-99.9c18-18 28.1-42.4 28.1-67.9L640 224l0-64 0-56c0-22.1-17.9-40-40-40s-40 17.9-40 40z"
+            />
+          </svg>
+          <p>NSS</p>
+        </div>
+        <div
+          class="hover:bg-red-600 hover:text-white cursor-pointer p-2 flex flex-col gap-4 items-center justify-center text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            height="32"
+            width="32"
+          >
+            <path
+              d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+            />
+          </svg>
+          <p>E-Library</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-4 w-full text-gray-400 py-6 px-4">
+      <div class="grid grid-cols-3 gap-2">
+        <div class="text-center flex flex-col justify-center items-center gap-1">
+          <img src="./images/logo-main.png" alt="Logo">
+          <p>Chhatrapati Shahu Ji Maharaj University, Kanpur</p>
+          <p>(Formerly Kanpur University, Kanpur)</p>
+          <p>Kalyanpur, Kanpur-208024</p>
+          <p>Contact : 0512-2246609, 0512-2246608</p>
+          <p>E-mail: info@csjmu.ac.in / ssc@csjmu.ac.in</p>
+        </div>
+        
+        <div class="flex flex-col mt-4 gap-2">
+          <h2 class="text-white">Terms & Policies</h2>
+          <div class="hover:text-white cursor-pointer">Logo download</div>
+          <div class="hover:text-white cursor-pointer">Copyrights</div>
+          <div class="hover:text-white cursor-pointer">Hyperlinking Policy</div>
+          <div class="hover:text-white cursor-pointer">Terms & Conditions</div>
+          <div class="hover:text-white cursor-pointer">Privacy Policy</div>
+          <div class="hover:text-white cursor-pointer">Disclaimer</div>
+        </div>
+
+        <div  class="flex flex-col mt-4 gap-2">
+          <h2 class="text-white">Important Links</h2>
+          <div class="hover:text-white cursor-pointer">Raj Bhavan, Uttar Pradesh</div>
+          <div class="hover:text-white cursor-pointer">Higher Education, Uttar Pradesh</div>
+          <div class="hover:text-white cursor-pointer">Uttar Pradesh Higher Education Digital Library</div>
+          <div class="hover:text-white cursor-pointer">HRD Minister</div>
+          <div class="hover:text-white cursor-pointer">NCTE</div>
+          <div class="hover:text-white cursor-pointer">NSS Registration</div>
+          <div class="hover:text-white cursor-pointer">Common Fee Payment Portal</div>
+          <div class="hover:text-white cursor-pointer">MGSL (NSS)</div>
+          <div class="hover:text-white cursor-pointer">Tenders</div>
+          <div class="hover:text-white cursor-pointer">National Ragging Prevention Program/div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
