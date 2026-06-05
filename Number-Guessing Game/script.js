@@ -26,25 +26,19 @@ if (playGame) {
 function validateGuess(guess){
     if(isNaN(guess)){
         alert("Please Enter a valid number")
-    }else if(guess >100){
+    } else if(guess > 100 || guess < 1){
         alert("Please Enter a number between 1 and 100")
-    }else if(guess <1){
-        alert("Please Enter a number between 1 and 100")
-    }
-    else{
-        prevGuesses.unshift(guess)
-        // console.log(prevGuesses)
-        if(numGuesses === 10){
-            displayGuess(guess)
-            displayMessage(`Game over , random number was ${randomNumber}`)
+    } else {
+        displayGuess(guess)
+        checkGuess(guess)
+        
+        if(numGuesses > 10 && guess !== randomNumber){
+            displayMessage(`Game over, random number was ${randomNumber}`)
             endGame()
-        }
-        else{
-            displayGuess(guess)
-            checkGuess(guess)
         }
     }
 }
+
 function checkGuess(guess){
     if(guess === randomNumber){
         displayMessage("You guessed it right")
